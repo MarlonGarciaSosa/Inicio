@@ -8,30 +8,46 @@
 html {
     background-color: black;
 }
+
+
+/**header**/
 header{
     background-color: #333;
 }
-header #tabla2 {
-    background-color: rgb(74, 74, 74)
-}
-header #tabla2 th{
-    border: 3px solid #444;
+
+.header-section__table__img{
+    width: 2rem;
 }
 
-#Ajedrez:hover, #Frontenis:hover, #Animales:hover, #Bettas:hover {
+.header-nav__table {
+    background-color: rgb(74, 74, 74);
+}
+
+.header-nav__table th{
+    border: 3px solid #444;
+    border-collapse: collapse;
+}
+
+.header-nav__table__link {
+    color: rgb(78, 78, 248);
+}
+
+.header-nav__table__link:hover {
     background-color: rgb(100,100,100) ;
 }
 
-header #caballero{
+.header-section #caballero{
     background-color: #333;
     width: 3rem;
     height: 4rem;
 }
-header #sol{
+.header-section #sol{
     background-color: #333;
     width: 2rem;
     height: 2rem;
 }
+
+
 /**Celular**/
 @media (max-width: 767px) {
     * {
