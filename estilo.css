@@ -1,66 +1,87 @@
 * {
-    font-size: 2rem;
+    text-align: center;
+    border-collapse: collapse;
     margin: 0 auto;
     padding: 0;
-    font-family: Century Gothic,Arial,sans-serif;
+    font-family: Century, Arial, sans-serif;
+    color: white;
+}
 
-}
 html {
-    background-color: black;
+    padding-top: 101.2px;
 }
+
+
 
 
 /**header**/
-header{
+header, header *{
+    background-color: #333;   
+}
+.header{
+    width: 100%;
+    position: fixed;
+    margin-top: -101.2px;
+}
+
+
+/**Primera sección**/
+.header__section{
+    display: block;
+    padding: 5px;
+}
+.header__section #caballero{
     background-color: #333;
-}
-
-.header-section__table__img{
-    width: 2rem;
-}
-
-.header-nav__table {
-    background-color: rgb(74, 74, 74);
-}
-
-.header-nav__table th{
-    border: 3px solid #444;
-    border-collapse: collapse;
-}
-
-.header-nav__table__link {
-    color: rgb(78, 78, 248);
-}
-
-.header-nav__table__link:hover {
-    background-color: rgb(100,100,100) ;
-}
-
-.header-section #caballero{
-    background-color: #333;
+    display: inline;
     width: 3rem;
     height: 4rem;
 }
-.header-section #sol{
+.header__section #sol{
     background-color: #333;
+    display: inline;
     width: 2rem;
     height: 2rem;
 }
 
 
-/**Celular**/
-@media (max-width: 767px) {
-    * {
-        font-size: 1.25rem;
-    }
-    h1 {
-        font-size: 1.40rem;
-    }
-    h2 {
-        font-size: 1.30rem;
-    }
+/**Segunda nav**/
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+    width: 100vw;
 }
-/**Tablet**/
-@media (min-width: 768px) and (max-width: 990px) {}
-/**PC**/
-@media (min-width: 991px) {}
+.header__nav-absolute {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100vw;
+    top: -24px;
+    left: 1000px;
+}
+.header__nav__link{
+    position: relative;
+    display: inline;
+    min-width: 120px;
+    background-color: rgb(74, 74, 74);
+    color: rgb(78, 78, 248);    
+    border: 3px solid #444;
+}
+.header__nav-absolute__link{
+    position: relative;
+    display: inline;
+    min-width: 120px;
+    background-color: rgb(74, 74, 74);
+    color: rgb(78, 78, 248);    
+    border: 3px solid #444;
+}
+.header__nav__link:hover {
+    background-color: rgb(100,100,100);
+}
+#caballero:hover > .header__nav-absolute {
+    left: -1000px;
+}
+#caballero:hover > .header__nav {
+    left: -1000px;
+}
