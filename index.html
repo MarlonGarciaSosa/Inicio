@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <script src="codigo.js"></script>
-    <title>Inicio</title>
+    <script src="index.js"></script>
+    <title>Portafolio</title>
 </head>
 <body>
 
     <header class="header" id="titulo">
 
-        <section class="header__section">
-            <img class="header__section__img" id="caballero" src="caballero.png"/>
-            <img class="header__section__img" id="sol" onclick="CambiarColorSol()" src="sol.png"/>
-        </section>
+        <div class="flex-header">
+            <section class="header__logo-section">
+                <img class="header__logo-section__img" src="./images/Logo.png">
+                <p class="header__logo-section__p">ZilmakWeb</p>
+            </section>
+
+            <section class="header__Portafolio">
+                <h1 class="header__Portafolio__h1">Portafolio</h1>
+            </section>
+        </div>
 
         <nav class="header__nav">
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Ajedrez/">Ajedrez</a>
+            <a class="header__nav__link active" href="https://marlongarciasosa.github.io/Inicio/">Inicio</a>
+        <!--<a class="header__nav__link" href="https://marlongarciasosa.github.io/Frontenis/">Frontenis</a>
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Bettas/">Bettas</a>-->
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Armas/">Armas</a>
             <a class="header__nav__link" href="https://marlongarciasosa.github.io/Animales/">Animales</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Inicio/">Armas</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Bettas/">Bettas</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Frontenis/">Frontenis</a>
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Ajedrez/">Ajedrez</a>
         </nav>
 
     </header>
 
-   <main>
-       <img src="Construccion.jpg" class="img"/>
-   </main>
-    
+    <main>
+        <img src="./images/Construccion.jpg" class="img"/>
+    </main>
+
     <footer></footer>    
 </body>
 </html>
